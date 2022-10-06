@@ -1,62 +1,48 @@
-{% comment %}
-This is the typical schedule for the Data Carpentry workshops.
-The schedule for the different curricula are listed here:
-- dc-astronomy
-- dc-ecology
-- dc-genomics
-- dc-socsci
-- dc-geosptial
-{% endcomment %}
-
-{% if site.curriculum == "dc-astronomy" %}
 <div class="row">
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr>
-	<td>Before starting</td>
-	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
-      </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/astronomy-python/01-query/">Basic Queries</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/astronomy-python/02-coords/">Coordinate Transformations</a></td></tr>
-      <tr><td>Afternoon</td> <td> <a href="https://datacarpentry.org/astronomy-python/03-transform/">Plotting and Tabular Data</a></td></tr>
-      <tr><td> </td> <td> <a href="https://datacarpentry.org/astronomy-python/04-motion/">Plotting and Pandas</a></td></tr>
+      <tr> <td>Before</td> <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Pre-workshop survey</a> </td> </tr>
+      <tr> <td>09:00</td>  <td><a href="https://swcarpentry.github.io/shell-novice/setup.html">Automating Tasks with the Unix Shell</a></td> </tr>
+      <tr> <td>10:30</td>  <td>Morning break</td> </tr>
+      <tr> <td>11:00</td>  <td><a href="https://swcarpentry.github.io/shell-novice/setup.html">Automating Tasks with the Unix Shell (Continued)</a></td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td>  <td><a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a></td> </tr>
+      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
+      <tr> <td>15:00</td>  <td><a href="https://swcarpentry.github.io/git-novice/">Version Control with Git (Continued)</a></td> </tr>
+      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>16:30</td>  <td>END</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr><td>Morning</td><td><a href="https://datacarpentry.org/astronomy-python/05-select/">Transform and Select</a></td></tr>
-      <tr><td> </td> <td> <a href="https://datacarpentry.org/astronomy-python/06-join/">Join</a></td></tr>
-      <tr><td>Afternoon</td><td><a href="https://datacarpentry.org/astronomy-python/07-photo/">Photometry</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/astronomy-python/08-plot/">Visualization</a></td></tr>
+      <tr> <td>09:00</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a></td> </tr>
+      <tr> <td>10:30</td>  <td>Morning break</td> </tr>
+      <tr> <td>11:00</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python(Continued)</a></td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python(Continued)</a></td> </tr>
+      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
+      <tr> <td>15:00</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python(Continued)</a></td> </tr>
+      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>16:30</td>  <td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Post-workshop Survey</a></td> </tr>
+      <tr> <td>16:40</td>  <td>END</td> </tr>
     </table>
   </div>
 </div>
-
-{% elsif site.curriculum == "dc-ecology" %}
-<div class="row">
-  <div class="col-md-6">
+<div class="col-md-6">
     <h3>Day 3</h3>
     <table class="table table-striped">
-      <tr>
-	<td>Before starting</td>
-	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
-      </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
-      <tr><td> </td><td><a href="https://datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a></td></tr>
-      <tr>
-        <td>Afternoon</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Introduction to R</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-      </td></tr>
-      <tr> <td>Evening</td> <td>END</td> </tr>
+      <tr> <td>09:00</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a></td> </tr>
+      <tr> <td>10:30</td>  <td>Morning break</td> </tr>
+      <tr> <td>11:00</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python(Continued)</a></td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python(Continued)</a></td> </tr>
+      <tr> <td>14:30</td>  <td>Afternoon break</td> </tr>
+      <tr> <td>15:00</td>  <td><a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python(Continued)</a></td> </tr>
+      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>16:30</td>  <td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank" rel="noopener noreferrer">Post-workshop Survey</a></td> </tr>
+      <tr> <td>16:40</td>  <td>END</td> </tr>
     </table>
   </div>
-  
+</div>
